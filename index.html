@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather app | JavaScript</title>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+            <h2>The Weather</h2>
+            <div class="weather">
+                <span id="main-weather"></span>
+                <span id="city">Get Your City Weather!</span>
+                <div class="date">
+                <span id="date"></span>
+                <span id="month"></span>
+                <span id="year"></span>
+            </div>
+                <span id="icon"></span>
+                <span id="main"></span>
+            </div>
+        </div>
+        <div class="Container">
+            <input type="text" id="inp" placeholder="Search Weather">
+            <button id="search-btn" onclick= "getWeather()" class="material-symbols-outlined">search</button>
+            <div class="detail">
+                <h5>Weather Detail</h5>
+                <div class="spans">
+                    Feels like
+                    <span id="feels"></span>
+                </div>
+                <div class="spans">
+                    Clouds
+                    <span id="clouds"></span>
+                </div>
+                <div class="spans">
+                    Pressure
+                    <span id="pressure"></span>
+                </div>
+                <div class="spans">
+                    Humidity
+                    <span id="humidity"></span>
+                </div>
+                <div class="spans">
+                    Description
+                    <span id="desc"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

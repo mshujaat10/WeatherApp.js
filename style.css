@@ -1,0 +1,222 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    background: url(/default.avif)no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+.content{
+    width: 50%;
+    position: relative;
+    margin-left: 90px;
+}
+.weather{
+    position: absolute;
+    top: 70%;
+}
+#main-weather{
+    font-size: 65px;
+}
+#city{
+    font-size: 35px;
+    margin: 0px 10px 0px 5px
+}
+.spans{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #afafaf;
+}
+#main{
+    position: absolute;
+    top: 70%;
+    left: 88%;
+}
+.Container{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 25px;
+    position: relative;
+    width: 33%;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    background: rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32 0 rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#inp{
+    position: absolute;
+    top: 5%;
+    width: 82%;
+    border: none;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+#search-btn{
+    cursor: pointer;
+    background-color: orange;
+    position: absolute;
+    padding: 11px 12px;
+    top: 0px;
+    right: 0px;
+    border: none;
+}
+#search-btn:hover{
+    background-color: rgb(255, 202, 102);
+}
+.detail{
+    position: absolute;
+    top: 40%;
+    border-top: 1px solid rgb(204, 204, 204);
+    width: 85%;
+    padding-top: 15px;
+}
+.date{
+    display: flex;
+    position: absolute;
+    left: 10.6rem;
+    font-size: 20px;
+}
+#date{
+    margin-right: 5px;
+}
+
+
+
+
+@media only screen and (max-width:1200px) {
+    .Container{
+        width: 40%;
+    }
+}
+@media only screen and (max-width:900px) {
+    .Container{
+        width: 50%;
+    }
+    .content{
+        width: 65%;
+        margin-left: 35px;
+    }
+    #main-weather{
+        font-size: 70px !important;
+    }
+}
+@media only screen and (min-width:700px) and (max-width:780px) {
+    .detail{
+        padding-top: 30px !important;
+    }
+    
+}
+@media only screen and (max-width:800px) {
+    .mist-img{
+        background-position-y: center;
+    }
+    .fog-img{
+        background-position-x: left;
+    }
+    .main{
+        flex-direction: column;
+        justify-content: normal;
+    }
+    .content{
+        width: 100%;
+        height: 100%;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .content h2{
+        position: absolute;
+        top: 0;
+        font-size: 20px;
+    }
+    .weather{
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .Container{
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 15px;
+    }
+    .detail{
+        padding-top: 45px;
+        position: static;
+        width: 100%;
+        border: none;
+    }
+    #inp{
+        left: 20px;
+        width: 90%;
+    }
+    #main{
+        position: static;
+    }
+    .date{
+        position: static;
+    }
+}
+
+.clear-img{
+    background-image: url(/clear.jpg);
+    color: #424242;
+}
+.clear-img #inp{
+    color: #2c2c2c;
+}
+.clear-img .spans{
+    color: #2c2c2c;
+}
+.clear-img .content{
+    color: white;
+}
+.cloudy-img{
+    background-image: url(/cloudy.avif);
+}
+.fog-img{
+    background-image: url(/fog.avif);
+}
+.rainy-img{
+    background-image: url(/rainy.avif);
+}
+.sunny-img{
+    background-image: url(/sunny.jpg);
+}
+.sunny-img #inp{
+    color: black;
+}
+.mist-img{
+    background-image: url(/mist.jpg);
+    color: #262626;
+}
+.mist-img .spans{
+    color: rgb(66, 66, 66);
+}
+.snow-img{
+    background-image: url(/snow.jpg);
+    color: black;
+}
+.snow-img .spans{
+    color: black;
+}
